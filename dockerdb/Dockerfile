@@ -1,0 +1,2 @@
+CMD ["make", "database-up"]
+
