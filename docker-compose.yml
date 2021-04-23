@@ -12,5 +12,8 @@ services:
     mongodb:
         container_name: mongodbwalmart
         image: cbennerb/codingexercisedb:1.0.0
+        environment:
+            - MONGO_INITDB_ROOT_USERNAME=productListUser
+            - MONGO_INITDB_ROOT_PASSWORD=productListPassword
         ports:
             - '27017:27017'
