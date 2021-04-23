@@ -9,6 +9,8 @@ services:
             - '3355:3000'
         links:
             - mongodb
+        volumes:
+            - ./dockernodejs:/usr/src/app
     mongodb:
         container_name: mongodbwalmart
         image: mongo:3.6.8
