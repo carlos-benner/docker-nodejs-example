@@ -11,6 +11,6 @@ services:
             - mongodb
     mongodb:
         container_name: mongodbwalmart
-        image: cbennerb/codingexercisedb@1.0.0
+        image: cbennerb/codingexercisedb:1.0.0
         ports:
             - '27017:27017'
