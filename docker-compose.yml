@@ -10,6 +10,7 @@ services:
         links:
             - mongodb
     mongodb:
-        container_name: mongodb-local
+        container_name: mongodbwalmart
+        image: cbennerb/codingexercisedb
         ports:
             - '27017:27017'
