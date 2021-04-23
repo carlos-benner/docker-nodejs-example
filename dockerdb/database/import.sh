@@ -2,9 +2,9 @@
 HOST=$1
 PROJECT_DIRECTORY=$2
 FILES=$(ls ${PROJECT_DIRECTORY}/database/*.json | sort -n -t _ -k 2)
-
 while : ; do
     CHECK=$(mongo --host ${HOST} --username productListUser --password productListPassword --authenticationDatabase admin promotions --eval 'db.version() 2> /dev/null')
+    echo "mongo --host ${HOST} --username productListUser --password productListPassword --authenticationDatabase admin promotions"
     if [[ $CHECK == *"MongoDB server version"* ]]
     then
         break
