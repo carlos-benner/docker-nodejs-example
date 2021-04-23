@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+    api:
+        container_name: nodejsapi
+        restart: always
+        build: /dockernodejs
+        ports:
+            - '3355:3000'
