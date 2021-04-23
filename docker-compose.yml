@@ -7,3 +7,7 @@ services:
         build: ./dockernodejs
         ports:
             - '3355:3000'
+    mongodb:
+        container_name: mongodb
+        ports:
+            - '27017:27017'
